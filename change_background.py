@@ -1,16 +1,22 @@
 import cv2
 
 
-def change_background(image):
-    changed_image = cv2.imread('./images/example_image.png')
-    image = changed_image
+def change_background(origin, mask, background):
+    origin_height = origin.shape[0]
+    origin_width = origin.shape[1]
+    resized_background = cv2.resize(background, dsize=(origin_width, origin_height))
     
-    return image
+    # copyTo() only running in same size.
+    result = cv2.copyTo(origin, mask, resized_background)
+    
+    return result
 
 
-# This image is for test. After implementing code of checking a background, change this variable to a background object.
-image = cv2.imread('./images/input.png')
-result = change_background(image)
 
-cv2.imshow('Changed Image', image)
+background = cv2.imread('./images/input.png')
+
+# The Function required original image and mask.
+result = change_background(result_img, mask, background)
+
+cv2.imshow('Changed Image', result)
 cv2.waitKey()
