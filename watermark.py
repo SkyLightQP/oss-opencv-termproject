@@ -4,12 +4,10 @@
 # In[ ]:
 
 
-from PIL import  Image, ImageDraw, ImageFont
+from PIL import ImageDraw, ImageFont
     
-image = Image.open(result)
-text_input = input('Enter the background country name : ')
-
 def watermark(image):
+    text_input = input('Enter the background country name : ')
     width, height = image.size
 
     draw = ImageDraw.Draw(image)
@@ -21,9 +19,8 @@ def watermark(image):
     y = height - textheight - margin
     draw.text((x/2, y/2), text, font=font)
     
+    image.save("result.jpg")
+    
     return image
 
-watermark(image)
-image.show()
-image.save("watermark.jpg")
 
