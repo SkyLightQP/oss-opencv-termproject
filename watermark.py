@@ -9,7 +9,7 @@ import cv2
     
 def watermark(cv_image):
     color_coverted = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
-    image=Image.fromarray(color_coverted)
+    image = Image.fromarray(color_coverted)
     
     text_input = input('Enter the background country name : ')
     width, height = image.size
