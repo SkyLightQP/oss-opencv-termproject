@@ -40,24 +40,16 @@ Finally, Show a result image and save.
 ## References
 
 - Facial Recognition
-
   - https://suy379.tistory.com/91
-
 - Detect a background
-
   - WIP
-
 - Change a background
-
   - Resize image (because copyTo() can use when the image size is the same.)
     - https://www.tutorialkart.com/opencv/python/opencv-python-get-image-size/
     - https://076923.github.io/posts/Python-opencv-8/
   - copyTo() function
     - https://deep-learning-study.tistory.com/104?category=946336
-
 - Draw a watermark
-
   - https://appia.tistory.com/374
-
 - Convert to PIL image from OpenCV image
   - https://www.zinnunkebi.com/python-opencv-pil-convert/
