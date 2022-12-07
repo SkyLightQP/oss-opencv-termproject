@@ -6,9 +6,9 @@
 
 ## Introduce
 
-- Check person and background
-- Remove original background and Change to other background.
-- And Add watermark(or some text).
+- Detect a person (Han Seunggyu) and a background (Hwang Sungwook)
+- Change to other background. (Ha Daegyeom)
+- And Add a watermark(or some text). (Cho Hyunjun)
 
 ## Demo
 
