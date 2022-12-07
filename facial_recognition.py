@@ -4,7 +4,7 @@ def face(img):
      #준비
     hog = cv2.HOGDescriptor() #객체
     hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector()) #모델지정 
-    hogParams = {'winStride': (8,8), 'padding': (32,32), 'scale': 1.05, 'hitThreshold': 0, 'finalThreshold': 5} #파라미터 설정 
+    hogParams = {'winStride': (8,8), 'padding': (32,32), 'scale': 1.05, 'hitThreshold': 0} #파라미터 설정 
 
     #검출
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) #흑백변환 
