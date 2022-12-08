@@ -1,12 +1,7 @@
 import cv2
 import numpy as np
 
-def remove_background(filename):
-  
-  # load image with alpha channel
-  img = cv2.imread(filename, cv2.IMREAD_UNCHANGED)
-
-
+def remove_background(img):
   # make normal image
   bgr = img[:,:,0:3]
 
