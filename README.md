@@ -14,11 +14,16 @@
 ## Demo
 
 - Original Image
-  ![Original](./images/input.png)
+
+![Original](./images/input.png)
+
 - Result
-  ![Result](./docs/output.jpg)
+
+![Result](./docs/output.jpg)
+
 - Terminal (input watermark)
-  ![Terminal](./docs/terminal.png)
+
+![Terminal](./docs/terminal.png)
 
 ## Getting Started
 
