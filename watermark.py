@@ -16,12 +16,12 @@ def watermark(cv_image):
 
     draw = ImageDraw.Draw(image)
     text = text_input
-    font = ImageFont.truetype('./font/Fine College.ttf', 325)
+    font = ImageFont.truetype('./font/Fine College.ttf', 200)
     textwidth, textheight = draw.textsize(text, font)
     margin = 10
     x = width - textwidth - margin
     y = height - textheight - margin
-    draw.text((x/2, y/2), text, font=font)
+    draw.text((x/2, y/2), text, font=font, fill="#00FFFF")
     
     image.save("result.jpg")
     
