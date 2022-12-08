@@ -6,7 +6,7 @@ def remove_background(img):
   bgr = img[:,:,0:3]
 
   # select white part of picture
-  lower_value = (240,245,240)
+  lower_value = (210,205,210)
   upper_value = (255,255,255)
   mask = cv2.inRange(bgr, lower_value, upper_value)
 
