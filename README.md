@@ -4,7 +4,7 @@
 
 ## Introduce
 
-> Detect a person, Change only background image and Add a watermark.
+**Detect a person, Change only background image and Add a watermark.**
 
 - Detect a person (Han Seunggyu)
 - Detect and Remove a background (Hwang Sungwook)
@@ -16,7 +16,7 @@
 - Original Image
   ![Original](./images/input.png)
 - Result
-  ![Result](./docs/result.jpg)
+  ![Result](./docs/output.jpg)
 - Terminal (input watermark)
   ![Terminal](./docs/terminal.png)
 
