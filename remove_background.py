@@ -1,10 +1,10 @@
 import cv2
 import numpy as np
 
-def remove_background():
+def remove_background(filename):
   
   # load image with alpha channel
-  img = cv2.imread('ex2.png', cv2.IMREAD_UNCHANGED)
+  img = cv2.imread(filename, cv2.IMREAD_UNCHANGED)
 
   # make white image
   white = img[:,:,3]
@@ -21,10 +21,5 @@ def remove_background():
   greenbg = bgr.copy()
   greenbg[mask==255] = (0,180,0)
 
-  return greenbg
-
-  cv2.imshow('bgr_new',greenbg)
-  cv2.waitKey(0)
-  cv2.destroyAllWindows()
-
+  return (greenbg, mask)
 

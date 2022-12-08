@@ -10,13 +10,3 @@ def change_background(origin, mask, background):
     result = cv2.copyTo(origin, mask, resized_background)
     
     return result
-
-
-
-background = cv2.imread('./images/input.png')
-
-# The Function required original image and mask.
-result = change_background(result_img, mask, background)
-
-cv2.imshow('Changed Image', result)
-cv2.waitKey()

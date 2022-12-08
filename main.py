@@ -5,8 +5,8 @@ from watermark import watermark
 from change_background import change_background
 
 
-img = cv2.imread("./images/face.png")
-# background = cv2.imread("./images/background.jpg")
+img = cv2.imread("./images/ex2.png")
+background = cv2.imread("./images/example_image.jpg")
 
 result_face = face(img)
 # TODO: Detect background
