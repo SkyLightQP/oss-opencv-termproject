@@ -12,6 +12,6 @@ def face(img):
 
     if (len(human)> 0): #사람으로 인식한게 1개 이상이라면 
         for (x, y, w, h) in human:
-            cv2.rectangle(img, (x, y), (x+w, y+h), (255, 255, 255), 3) #사각형을 그려! (여기서 255,255,255는 white 색)
+            cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 255), 3) #사각형을 그려! (여기서 255,255,255는 white 색)
         
     return img
