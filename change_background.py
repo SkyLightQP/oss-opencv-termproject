@@ -7,6 +7,7 @@ def change_background(origin, mask, background):
     resized_background = cv2.resize(background, dsize=(origin_width, origin_height))
     
     # copyTo() only running in same size.
+    mask = cv2.bitwise_not(mask)
     result = cv2.copyTo(origin, mask, resized_background)
     
     return result
