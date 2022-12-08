@@ -13,6 +13,13 @@
 
 ## Demo
 
+- Original Image
+  ![Original](./images/input.png)
+- Result
+  ![Result](./docs/result.jpg)
+- Terminal (input watermark)
+  ![Terminal](./docs/terminal.png)
+
 ## Getting Started
 
 - Require Python3 (This project was test on Python3.10)
