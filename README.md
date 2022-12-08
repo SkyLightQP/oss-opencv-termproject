@@ -1,13 +1,15 @@
 # oss-opencv-termproject
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
 
-> Gachon OpenSourceSW term project with OpenCV
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
 
 ## Introduce
 
-- Detect a person (Han Seunggyu) and a background (Hwang Sungwook)
+> Detect a person, Change only background image and Add a watermark.
+
+- Detect a person (Han Seunggyu)
+- Detect and Remove a background (Hwang Sungwook)
 - Change to other background. (Ha Daegyeom)
-- And Add a watermark(or some text). (Cho Hyunjun)
+- Add a watermark. (Cho Hyunjun)
 
 ## Demo
 
@@ -22,7 +24,11 @@ pip install opencv-python numpy pillow
 
 ## How to run
 
-First, Run main source code.
+First, Add two images: an Input image and A background image of what you want to change.
+
+- The Default filenames are input.png and background.png
+
+Second, Run main source code.
 
 ```shell
 py main.py
@@ -34,14 +40,15 @@ And, Enter a text that you want to put as a watermark.
 Enter the background country name : <Your Input>
 ```
 
-Finally, Show a result image and save.
+Finally, Show a result image and save(result.jpg).
 
 ## References
 
 - Facial Recognition
   - https://suy379.tistory.com/91
-- Detect a background
-  - WIP
+- Detect and Remove a background
+  - https://stackoverflow.com/questions/62648862/how-can-i-change-the-hue-of-a-certain-area-with-opencv-python
+  - https://stackoverflow.com/questions/64491530/how-to-remove-the-background-from-a-picture-in-opencv-python
 - Change a background
   - Resize image (because copyTo() can use when the image size is the same.)
     - https://www.tutorialkart.com/opencv/python/opencv-python-get-image-size/
