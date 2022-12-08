@@ -6,8 +6,6 @@ def remove_background(filename):
   # load image with alpha channel
   img = cv2.imread(filename, cv2.IMREAD_UNCHANGED)
 
-  # make white image
-  white = img[:,:,3]
 
   # make normal image
   bgr = img[:,:,0:3]
